@@ -1,4 +1,4 @@
-baseURL = "http://hugo-embed-pdf.github.io/"
+baseURL = "http://hugo-embed-pdf.netlify.app/"
 languageCode = "en-us"
 title = "hugo-embed-pdf"
 theme = "minimal"
@@ -8,14 +8,14 @@ googleAnalytics = ""
     author = "Open Source Grease Monkey"
     favicon = "static/images/favicon.png"
     description = "Shortcode to embed PDF files in Hugo sites."
-    githubUsername = "#"
+    githubUsername = "anvithks"
     accent = "red"
     showBorder = true
     backgroundColor = "white"
     font = "Raleway" # should match the name on Google Fonts!
     highlight = true
     highlightStyle = "default"
-    highlightLanguages = ["go", "haskell", "kotlin", "scala", "swift"]
+    highlightLanguages = ["go", "haskell", "kotlin", "scala", "swift", "javascript"]
 
 [[menu.main]]
     url = "/"
