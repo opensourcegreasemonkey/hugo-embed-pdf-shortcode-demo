@@ -1,4 +1,4 @@
-baseURL = "http://hugo-embed-pdf.netlify.app/"
+baseURL = "https://hugo-embed-pdf.netlify.app/"
 languageCode = "en-us"
 title = "hugo-embed-pdf"
 theme = "minimal"
