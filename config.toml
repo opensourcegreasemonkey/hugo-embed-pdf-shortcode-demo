@@ -1,11 +1,12 @@
-baseURL = "http://example.com/"
+baseURL = "http://hugo-embed-pdf.github.io/"
 languageCode = "en-us"
 title = "hugo-embed-pdf"
 theme = "minimal"
 googleAnalytics = ""
 
 [params]
-    author = "Calin Tataru"
+    author = "Open Source Grease Monkey"
+    favicon = "static/images/favicon.png"
     description = "Shortcode to embed PDF files in Hugo sites."
     githubUsername = "#"
     accent = "red"
