@@ -10,4 +10,4 @@ title: "hugo-embed-pdf demo"
 {{ < embed-pdf url="./path/to/your/file.pdf" > }}
 ```
 
-{{< embed-pdf url="./hugo-embed-pdf-sample.pdf" >}}
+{{< embed-pdf url="./hugo-embed-pdf-sample.pdf" hidePaginator="true" >}}
