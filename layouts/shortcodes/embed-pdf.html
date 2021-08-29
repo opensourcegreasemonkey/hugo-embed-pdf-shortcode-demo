@@ -1,5 +1,5 @@
 <!-- If using the baseURL then use this src= '{{"/" | relURL}}js/pdf-js/build/pdf.js'  -->
-<script type="text/javascript" src= '{{"/" | relURL}}js/pdf-js/build/pdf.js'></script>
+<script type="text/javascript" src= '/js/pdf-js/build/pdf.js'></script>
 <style>
 #the-canvas {
   border: 1px solid black;
@@ -59,9 +59,9 @@
 window.onload = function() {
 // If absolute URL from the remote server is provided, configure the CORS
 // header on that server.
-// var url = '{{ .Get "url" }}';
+var url = '{{ .Get "url" }}';
 // If using the baseURL then use the following and comment line 62
-var url = "{{.Site.BaseURL}}" + '{{ .Get "url" }}';
+// var url = "{{.Site.BaseURL}}" + '{{ .Get "url" }}';
 
 var hidePaginator = "{{ .Get "hidePaginator" }}" === "true";
 var hideLoader = "{{ .Get "hideLoader" }}" === "true";
@@ -71,10 +71,10 @@ var selectedPageNum = parseInt("{{ .Get "renderPageNum" }}") || 1;
 var pdfjsLib = window['pdfjs-dist/build/pdf'];
 
 // The workerSrc property shall be specified.
-// pdfjsLib.GlobalWorkerOptions.workerSrc = '/js/pdf-js/build/pdf.worker.js';
+pdfjsLib.GlobalWorkerOptions.workerSrc = '/js/pdf-js/build/pdf.worker.js';
 
 // The workerSrc property shall be specified. Use the following line to specify the baseURL and comment line 74.
-pdfjsLib.GlobalWorkerOptions.workerSrc = "{{.Site.BaseURL}}" + 'js/pdf-js/build/pdf.worker.js';
+// pdfjsLib.GlobalWorkerOptions.workerSrc = "{{.Site.BaseURL}}" + 'js/pdf-js/build/pdf.worker.js';
 
 // Change the Scale value for lower or higher resolution.
 var pdfDoc = null,
