@@ -13,5 +13,16 @@ description: "This a demo page for the hugo-embed-pdf-shortcode"
 
 #### Hide pagination
 
+If you wish to hide the pagination use the following attribute
+```
+{{ < embed-pdf url="./path/to/your/file.pdf" hidePaginator="true"  > }}
+```
+
+#### Hide loading spinner
+
+If you wish to hide the loading spinner use the following attribute
+```
+{{ < embed-pdf url="./path/to/your/file.pdf" hideLoader="true"  > }}
+```
 
 {{< embed-pdf url="./hugo-embed-pdf-sample.pdf" hideLoader="false" hidePaginator="false" >}}
