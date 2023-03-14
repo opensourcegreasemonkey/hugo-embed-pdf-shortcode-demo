@@ -27,6 +27,10 @@ googleAnalytics = ""
     name = "Demo"
     weight = 2
 
+[[menu.main]]
+    url = "/select-page-demo/"
+    name = "Select Page Demo"
+    weight = 3
 
 
 # Social icons to be shown on the right-hand side of the navigation bar.
