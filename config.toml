@@ -31,6 +31,10 @@ googleAnalytics = ""
     url = "/select-page-demo/"
     name = "Select Page Demo"
     weight = 3
+[[menu.main]]
+    url = "/multiple-embed/"
+    name = "Multiple PDF Embed Demo"
+    weight = 4
 
 
 # Social icons to be shown on the right-hand side of the navigation bar.
